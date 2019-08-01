@@ -83,34 +83,13 @@
         <div class="row">
             <div class="col-md-4">
                 <h3><b>OMI ( onemysoft integration )</b></h3>
-                <p style="font-size:18px">　　OMI是onemysoft发布的一款数据集成，数据服务，任务调度，API网关，数据应用一体的数据处理工具。</p>
-				<p style="font-size:18px">　　数据处理引擎，使用kettle工具，具有简单，方便，高效，适配多种数据源等特点。</p>
+                <p style="font-size:18px">　　OMI是onemysoft发布的一款数据集成，数据服务，任务调度，服务网关，服务应用一体的数据处理平台。集群布署高可用，高性能，按需扩容。</p>
+				<p style="font-size:18px">　　数据处理引擎使用Kettle工具，具有简单，方便，高效，适配多种数据源等特点。</p>
+				<p style="font-size:18px">　　OMI为项目提供一个强大的数据处理组件，让您的项目更快的实施，更高效的运任，更方便的运维监控。</p>
                 <h4><b></b></h4>
             </div>
             <div class="col-md-8">
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img class="img-responsive" src="images/omi750.jpg" alt="">
-                        </div>
-                    </div>
-
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                </div>
+                <img class="img-responsive" src="images/omi750.jpg" alt="">
             </div>
 
         </div>
@@ -119,11 +98,27 @@
         <!-- Service Tabs -->
         <div class="row">
             <div class="col-lg-12">
+                <h2 class="page-header">产品定位：</h2>
+            </div>
+            <div class="col-lg-6">
+				<div class="tab-pane fade active in" id="service-one">
+					<h4><b>OMI在项目中的定位</b></h4>
+					<p style="font-size:18px">　　OMI在项目中主要是与内外部系统进行数据交互，并对数据进行，跑批、清洗、归档等加工处理。</p>
+					<p style="font-size:18px">　　在交互中适配多种协议，SOAP、REST、JDBC、FILE、MQ等等。支持多种大数据交互，hive、mongonDB、redis等等。</p>
+				</div>
+            </div>
+			<div class="col-lg-6 img-portfolio">
+				<a href="images/omi_position.jpg" target="_blank"><img class="img-responsive" src="images/omi_position.jpg" alt=""></a>
+			</div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
                 <h2 class="page-header">应用场情：</h2>
             </div>
             <div class="col-lg-6">
 				<div class="tab-pane fade active in" id="service-one">
-					<h4><b>非实时数据处理示例</b></h4>
+					<h4><b>1、非实时数据处理示例</b></h4>
 					<p style="font-size:18px">　　非实时场景流程，OMI通过调度定时从若干业务系统中抽取数据，按照相应逻辑生成文本文件，传至FTP或阿里云的OSS分布式文件系统。然后OMI将生成的文件读取出来写入到hadoop环境，采用的是hive2的JDBC方式，再者是OMI对数据进行加工处理。最后是将数据发布出API供前端使用</p>
 					
 				</div>
@@ -136,7 +131,7 @@
         <div class="row">
             <div class="col-lg-6">
 				<div class="tab-pane fade active in" id="service-one">
-					<h4><b>准实时数据处理示例</b></h4>
+					<h4><b>2、准实时数据处理示例</b></h4>
 					<p style="font-size:18px">　　准实时场景流程，是通过阿里的canal工具实时同步mysql（或阿里云RDS）系统的数据至消息队列kafka中，OMI通过配置MQ监听，进行消费，将数据处理至hive、mysql或redis中，以方便前端使用。</p>
 					
 				</div>
