@@ -118,7 +118,7 @@
             </div>
             <div class="col-lg-6">
 				<div class="tab-pane fade active in" id="service-one">
-					<h4><b>1、非实时数据处理示例</b></h4>
+					<h4><b>1、非实时数据批处理示例</b></h4>
 					<p style="font-size:18px">　　非实时场景流程，OMI通过调度定时从若干业务系统中抽取数据，按照相应逻辑生成文本文件，传至FTP或阿里云的OSS分布式文件系统。然后OMI将生成的文件读取出来写入到hadoop环境，采用的是hive2的JDBC方式，再者是OMI对数据进行加工处理。最后是将数据发布出API供前端使用</p>
 					
 				</div>
@@ -131,7 +131,7 @@
         <div class="row">
             <div class="col-lg-6">
 				<div class="tab-pane fade active in" id="service-one">
-					<h4><b>2、准实时数据处理示例</b></h4>
+					<h4><b>2、准实时数据流处理示例</b></h4>
 					<p style="font-size:18px">　　准实时场景流程，是通过阿里的canal工具实时同步mysql（或阿里云RDS）系统的数据至消息队列kafka中，OMI通过配置MQ监听，进行消费，将数据处理至hive、mysql或redis中，以方便前端使用。</p>
 					
 				</div>
